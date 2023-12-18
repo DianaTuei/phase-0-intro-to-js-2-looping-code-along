@@ -15,12 +15,8 @@ function writeCards(names, event){
 const result = writeCards(names, event);
 console.log(result);
 
-function countDown(startingNumber) {
-    if (typeof startingNumber !== 'number' || startingNumber <= 0 || !Number.isInteger(startingNumber)) {
-      console.log("Please provide a valid positive integer.");
-      return;
-    }
-  
+function countDown() {
+    let startingNumber = 10;
     while (startingNumber >= 0) {
       console.log(startingNumber);
       startingNumber--;
